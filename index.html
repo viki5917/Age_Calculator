@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> -->
+  
+  <title> Age calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="input">
+      <div class="date">
+        <label for="">Date:</label><br/>
+        <input id="dob-date" type="number" placeholder="Date" min="1" max="31"/>
+      </div>
+      <div class="month">
+        <label for="">Month:</label><br/>
+        <input id="dob-month" type="number" placeholder="Month" min="1" max="12"/>
+      </div>
+      <div class="year">
+        <label for="">Year:</label><br/>
+        <input id="dob-year" type="number" placeholder="Year" min="1900" max="2023"/>
+      </div>
+    </div><br>
+    <hr><br>
+    <div class="dob">
+      <h1><span id="age-result-year">--</span> Years</h1><br>
+      <h1><span id="age-result-month">--</span> Months</h1><br>
+      <h1><span id="age-result-day">--</span> Days</h1><br>
+      <button onclick="calculateAge()">Calculate Age</button>
+    </div>
+  </div>
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Vignesh S</a>.
+  </div> -->
+  <script src="index.js"></script>
+</body>
+</html>
